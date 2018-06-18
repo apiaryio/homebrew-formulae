@@ -12,3 +12,16 @@ $ brew tap apiaryio/formulae
 ```
 
 See individual tools for usage.
+
+## Updating Formula
+
+### Blackbelt
+
+Blackbelt formula can be updated using the script provided in
+`bin/update-blackbelt.sh`. For example:
+
+```shell
+$ ./bin/update-blackbelt.sh
+$ git add Formula/blackbelt.rb
+$ git commit -m 'Update blackbelt'
+```
