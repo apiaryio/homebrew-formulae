@@ -1,0 +1,32 @@
+version: 2
+
+aliases:
+  - &install-base
+    working_directory: /usr/local/Homebrew/Library/Taps/apiaryio/homebrew-formulae
+    macos:
+      xcode: "9.4.0"
+
+workflows:
+  version: 2
+
+  formulae:
+    jobs:
+      - install-blackbelt
+      - install-drafter
+
+jobs:
+  install-blackbelt:
+    <<: *install-base
+    steps:
+      - checkout
+      - run:
+          name: Install blackbelt
+          command: brew install Formula/blackbelt.rb
+
+  install-drafter:
+    <<: *install-base
+    steps:
+      - checkout
+      - run:
+          name: Install drafter
+          command: brew install Formula/drafter.rb
