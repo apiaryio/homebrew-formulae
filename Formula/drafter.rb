@@ -1,8 +1,8 @@
 class Drafter < Formula
   desc 'Snowcrash parser harness'
   homepage 'http://apiblueprint.org'
-  url 'https://github.com/apiaryio/drafter/releases/download/v2.1.2/drafter-v2.1.2.tar.gz'
-  sha256 '2e1ea1b34ec817e917a050e50252f492aff308b0640b075a6b7f2fcf6a996810'
+  url 'https://github.com/apiaryio/drafter/releases/download/v4.0.0-pre.0/drafter-v4.0.0-pre.0.tar.gz'
+  sha256 '3dc5b082fe8b9773873b1103c88a28366f1ea0965d54249f762f621f818b4da7'
   head 'https://github.com/apiaryio/drafter.git'
 
   def install
