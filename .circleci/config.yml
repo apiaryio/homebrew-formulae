@@ -13,6 +13,7 @@ workflows:
     jobs:
       - install-blackbelt
       - install-drafter
+      - install-drafter-head
 
 jobs:
   install-blackbelt:
@@ -30,3 +31,11 @@ jobs:
       - run:
           name: Install drafter
           command: brew install Formula/drafter.rb
+
+  install-drafter-head:
+    <<: *install-base
+    steps:
+      - checkout
+      - run:
+          name: Install drafter
+          command: brew install --HEAD Formula/drafter.rb
